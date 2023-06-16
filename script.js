@@ -15,7 +15,7 @@
     roomDescription.textContent = room.description;
 
     const roomAPIUrl = document.createElement("a");
-    roomAPIUrl.href = "...."+room.name;
+    roomAPIUrl.href = "https://chat.justchatorg.repl.co/"+room.name;
     roomAPIUrl.textContent = "Join the Room";
     roomAPIUrl.classList.add("join-button")
     roomContainer.appendChild(roomName);
