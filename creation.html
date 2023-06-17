@@ -41,47 +41,38 @@
             color: #666;
             margin-top: 10px;
         }
-  /* Info text styles */
-        .info-text {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 18px;
-            color: #555;
-        }
+.info-container {
+  text-align: center;
+  margin-top: 100px;
+}
 
-        .info-text a {
-            color: #007bff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+.info-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
 
-        .info-text a:hover {
-            color: #0056b3;
-        }
+.info-text:hover {
+  color: blue;
+}
 
-        /* Button styles */
-        .visit-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #007bff;
-            color: #fff;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        }
+.info-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6441A4;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        /* Hover effects */
-        .visit-button:hover {
-            background-color: #0056b3;
-        }
+.info-button:hover {
+  background-color: #4B367E;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 
-        /* Button elevation */
-        .visit-button:active {
-            transform: translateY(2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
@@ -130,11 +121,13 @@
 		    	        <div class="instruction">Step 6 : Answer the questions the application ask, Then come here and register.</div>
 
     </div>
-	
-    <div class="info-text">
-        <p>For more information, visit <a href="https://github.com/docs">GitHub Docs</a>.</p>
-        <a class="visit-button" href="https://github.com">Visit GitHub</a>
-    </div>
+	  <div class="info-container">
+    <p class="info-text">
+      For more information, visit our Github
+    </p>
+    <a href="https://github.com/Justct" class="info-button">Visit Github</a>
+  </div>
+
 
     <script src="script_c.js"></script>
 	    <script>
