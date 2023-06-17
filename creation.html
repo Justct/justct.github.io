@@ -134,11 +134,19 @@
             Step 2: Set up ngrok + configure it first! (if using ngrok) <a href="https://ngrok.com/">Ngrok</a>
         </div>
         <div class="instruction">Step 3: Clone the repo
+		<div>
 	<div class="command">git clone https://github.com/Justct/Chatroom.git && cd Chatroom</div>
             <button class="copy-button">Copy</button>
+			</div>
 	<i>If using replit to host use: </i>
+		<div>
+		<div class="command">
+		sed -i 's|entrypoint = "main.py"|entrypoint = "Chatroom-replit/main.py"|' .replit
+</div>            <button class="copy-button">Copy</button></div>
+		<div>
 			<div class="command">git clone https://github.com/Justct/Chatroom-replit.git && cd Chatroom-replit</div>
             <button class="copy-button">Copy</button>
+			</div>
 
 	</div>
         <div class="instruction">Step 4 : Install Pip requirements 
