@@ -72,6 +72,38 @@
   background-color: #4B367E;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+		    body {
+  overflow-x: hidden;
+}
+ .info-container {
+      display: flex;
+      align-items: center;
+      background-color: #e8f5e9;
+      border: 2px solid #388e3c;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0 auto;
+      width: 70%;
+      max-height: 100px;
+      transition: background-color 0.3s ease;
+    }
+
+    .info-container:hover {
+      background-color: #c8e6c9;
+    }
+
+    .info-container h2 {
+      color: #388e3c;
+      font-size: 14px;
+      margin-right: 10px;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    .info-container p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
 
     </style>
 </head>
@@ -122,11 +154,11 @@
 
     </div>
 	  <div class="info-container">
-    <p class="info-text">
-      For more information, visit our Github
-    </p>
-    <a href="https://github.com/Justct" class="info-button">Visit Github</a>
+    <p>For more information, visit our Github</p>
+		      <a href="https://github.com/Justct" class="info-button">Visit Github</a>
+
   </div>
+
 
 
     <script src="script_c.js"></script>
