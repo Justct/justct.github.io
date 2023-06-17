@@ -22,6 +22,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Create a Chat Room</title>
+	    <style>
+        /* Heading styles */
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .heading p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+		        /* Info text styles */
+        .info-text {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-text p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .info-text a {
+            color: #666;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* Button styles */
+        .visit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #666;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effects */
+        .info-text:hover p,
+        .info-text:hover a {
+            color: #f9f9f9;
+        }
+
+        .visit-button:hover {
+            background-color: #333;
+        }
+
+        /* Button elevation */
+        .visit-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,6 +109,66 @@
         </form>
     </main>
 
+	<div class="heading">
+        <h1>Create a Chatroom!!</h1>
+        <p>Follow the steps below to get started:</p>
+    </div>
+
+	    <div class="instruction-container">
+        <div class="instruction">
+            Step 1: Make sure you meet all requirements,<br> Requirements - python3 , pip3/pip , git, ngrok account (default option is use ngrok)
+        </div>
+        <div class="instruction">
+            Step 2: Set up ngrok + configure it first! <a href="https://ngrok.com/">Ngrok</a>
+        </div>
+        <div class="instruction">Step 3: Clone the repo
+	<div class="command">git clone https://github.com/Justct/Chatroom.git && cd Chatroom</div>
+            <button class="copy-button">Copy</button>
+	<i>If using replit to host use: </i>
+			<div class="command">git clone https://github.com/Justct/Chatroom-replit.git && cd Chatroom-replit</div>
+            <button class="copy-button">Copy</button>
+
+	</div>
+        <div class="instruction">Step 4 : Install Pip requirements 
+			<div class="command">pip install -r requirements</div>
+            <button class="copy-button">Copy</button>
+	</div>
+
+	        <div class="instruction">Step 5 : Run the python program (using python3 if on linux, or use python)
+			<div class="command">python main.py</div>
+            <button class="copy-button">Copy</button>
+	</div>
+		    	        <div class="instruction">Step 6 : Answer the questions the application ask</div>
+
+    </div>
+	
+    <div class="info-text">
+        <p>For more information, visit <a href="https://github.com/Justct">Github Org</a>.</p>
+        <a class="visit-button" href="https://github.com/Justct">Visit GitHub</a>
+    </div>
+
     <script src="script_c.js"></script>
+	    <script>
+        // Copy button functionality
+        const copyButtons = document.querySelectorAll('.copy-button');
+
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const instruction = button.parentNode;
+                const commandText = instruction.querySelector('.command').textContent;
+
+                navigator.clipboard.writeText(commandText)
+                    .then(() => {
+                        console.log('Command copied to clipboard:', commandText);
+                        // Display a success message or perform any other desired action
+                    })
+                    .catch(error => {
+                        console.error('Error copying command to clipboard:', error);
+                        // Display an error message or perform any other desired action
+                    });
+            });
+        });
+    </script>
 </body>
+	
 </html>
