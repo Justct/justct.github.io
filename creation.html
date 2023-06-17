@@ -41,57 +41,46 @@
             color: #666;
             margin-top: 10px;
         }
-		        /* Info text styles */
+  /* Info text styles */
         .info-text {
             text-align: center;
             margin-top: 30px;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .info-text p {
             font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-            transition: color 0.3s;
+            color: #555;
         }
 
         .info-text a {
-            color: #666;
-            font-weight: bold;
+            color: #007bff;
             text-decoration: none;
             transition: color 0.3s;
+        }
+
+        .info-text a:hover {
+            color: #0056b3;
         }
 
         /* Button styles */
         .visit-button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #666;
+            padding: 12px 24px;
+            background-color: #007bff;
             color: #fff;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         }
 
         /* Hover effects */
-        .info-text:hover p,
-        .info-text:hover a {
-            color: #f9f9f9;
-        }
-
         .visit-button:hover {
-            background-color: #333;
+            background-color: #0056b3;
         }
 
         /* Button elevation */
         .visit-button:active {
             transform: translateY(2px);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -143,8 +132,8 @@
     </div>
 	
     <div class="info-text">
-        <p>For more information, visit <a href="https://github.com/Justct">Github Org</a>.</p>
-        <a class="visit-button" href="https://github.com/Justct">Visit GitHub</a>
+        <p>For more information, visit <a href="https://github.com/docs">GitHub Docs</a>.</p>
+        <a class="visit-button" href="https://github.com">Visit GitHub</a>
     </div>
 
     <script src="script_c.js"></script>
