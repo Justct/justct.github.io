@@ -21,7 +21,7 @@ form.addEventListener('submit', function (event) {
   };
 
   // Make a POST request to the Flask API
-  fetch('https://backendjustchat.darkmash.repl.co/new', {
+  fetch('https://justct.pythonanywhere.com/new', {
     method: 'POST',
 	  mode: "cors",
     headers: {
