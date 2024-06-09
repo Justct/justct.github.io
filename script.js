@@ -26,7 +26,7 @@
   }
  // Function to fetch and display rooms from the API
   function displayRooms(page, resultsPerPage) {
-    const url = `https://backendjustchat.darkmash.repl.co/get/${page}/${resultsPerPage}`;
+    const url = `https://justct.pythonanywhere.com/get/${page}/${resultsPerPage}`;
 
     fetch(url, { mode: "cors" })
       .then(response => response.json())
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchQuery = searchInput.value.trim();
 
     if (searchQuery !== "") {
-      const url = `https://backendjustchat.darkmash.repl.co/search/${searchQuery}`;
+      const url = `https://justct.pythonanywhere.com/search/${searchQuery}`;
 
       fetch(url, { mode: "cors" })
         .then(response => response.json())
